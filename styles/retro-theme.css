@@ -1,0 +1,439 @@
+/* Adding complete retro theme styles with animations and effects */
+
+/* Retro OS specific animations and effects */
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes scanlines {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+@keyframes flicker {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes boot-sequence {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes window-open {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes pixel-fade {
+  0% {
+    opacity: 0;
+    filter: blur(2px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+/* Retro UI Components */
+.typewriter {
+  overflow: hidden;
+  border-right: 2px solid #00ff00;
+  white-space: nowrap;
+  animation: typewriter 2s steps(40, end), blink 1s infinite;
+}
+
+.retro-window {
+  border: 2px outset #c0c0c0;
+  background: #c0c0c0;
+  box-shadow: inset -1px -1px #808080, inset 1px 1px #dfdfdf, 2px 2px 4px rgba(0, 0, 0, 0.3);
+  animation: window-open 0.3s ease-out;
+}
+
+.retro-window-header {
+  background: linear-gradient(90deg, #0000aa 0%, #0000ff 100%);
+  color: white;
+  padding: 2px 4px;
+  font-size: 11px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.retro-window-content {
+  background: #c0c0c0;
+  color: #000;
+  padding: 8px;
+  min-height: 200px;
+  font-family: "MS Sans Serif", sans-serif;
+  font-size: 11px;
+}
+
+.retro-button {
+  border: 2px outset #c0c0c0;
+  background: #c0c0c0;
+  color: #000;
+  padding: 4px 8px;
+  font-family: "MS Sans Serif", sans-serif;
+  font-size: 11px;
+  cursor: pointer;
+  transition: all 0.1s;
+  min-width: 75px;
+}
+
+.retro-button:hover {
+  background: #dfdfdf;
+}
+
+.retro-button:active {
+  border: 2px inset #c0c0c0;
+  background: #a0a0a0;
+}
+
+.retro-input {
+  border: 2px inset #c0c0c0;
+  background: white;
+  color: #000;
+  padding: 2px 4px;
+  font-family: "MS Sans Serif", sans-serif;
+  font-size: 11px;
+}
+
+.retro-input:focus {
+  outline: 1px dotted #000;
+  outline-offset: -2px;
+}
+
+/* Desktop and taskbar styles */
+.desktop-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4px;
+  margin: 4px;
+  cursor: pointer;
+  border-radius: 0;
+  transition: background-color 0.1s;
+  width: 64px;
+  height: 64px;
+}
+
+.desktop-icon:hover {
+  background-color: rgba(0, 0, 255, 0.3);
+}
+
+.desktop-icon.selected {
+  background-color: rgba(0, 0, 255, 0.5);
+}
+
+.desktop-icon img {
+  width: 32px;
+  height: 32px;
+  image-rendering: pixelated;
+}
+
+.desktop-icon span {
+  color: white;
+  font-size: 11px;
+  text-align: center;
+  margin-top: 2px;
+  text-shadow: 1px 1px 0px #000;
+}
+
+.taskbar {
+  background: #c0c0c0;
+  border-top: 1px solid #dfdfdf;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  padding: 0 4px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.start-button {
+  background: #c0c0c0;
+  border: 2px outset #c0c0c0;
+  padding: 2px 8px;
+  font-family: "MS Sans Serif", sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.start-button:active {
+  border: 2px inset #c0c0c0;
+}
+
+.taskbar-clock {
+  margin-left: auto;
+  padding: 2px 8px;
+  border: 1px inset #c0c0c0;
+  font-family: "MS Sans Serif", sans-serif;
+  font-size: 11px;
+  background: #c0c0c0;
+  color: #000;
+}
+
+/* Terminal/Console styles */
+.terminal {
+  background: #000;
+  color: #00ff00;
+  font-family: "Courier New", monospace;
+  padding: 8px;
+  border: none;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.terminal-cursor {
+  background: #00ff00;
+  color: #000;
+  animation: blink 1s infinite;
+}
+
+/* CRT Effects */
+.scanlines::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #00ff00, transparent);
+  animation: scanlines 2s linear infinite;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.crt-flicker {
+  animation: flicker 0.15s infinite linear;
+}
+
+.crt-screen {
+  background: radial-gradient(ellipse at center, #000 0%, #111 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.crt-screen::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 255, 0, 0.03) 2px,
+    rgba(0, 255, 0, 0.03) 4px
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Boot sequence styles */
+.boot-text {
+  animation: boot-sequence 0.5s ease-out forwards;
+  opacity: 0;
+}
+
+.boot-text:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.boot-text:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.boot-text:nth-child(3) {
+  animation-delay: 0.5s;
+}
+.boot-text:nth-child(4) {
+  animation-delay: 0.7s;
+}
+.boot-text:nth-child(5) {
+  animation-delay: 0.9s;
+}
+
+/* Progress bars */
+.retro-progress {
+  border: 2px inset #c0c0c0;
+  background: #c0c0c0;
+  height: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.retro-progress-bar {
+  background: linear-gradient(90deg, #0000aa 0%, #0000ff 50%, #0000aa 100%);
+  height: 100%;
+  transition: width 0.3s ease;
+  position: relative;
+}
+
+.retro-progress-bar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 2px,
+    rgba(255, 255, 255, 0.1) 2px,
+    rgba(255, 255, 255, 0.1) 4px
+  );
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background: #c0c0c0;
+  border: 1px inset #c0c0c0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c0c0c0;
+  border: 2px outset #c0c0c0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #dfdfdf;
+}
+
+::-webkit-scrollbar-corner {
+  background: #c0c0c0;
+}
+
+/* Menu styles */
+.retro-menu {
+  background: #c0c0c0;
+  border: 2px outset #c0c0c0;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 2px;
+  font-family: "MS Sans Serif", sans-serif;
+  font-size: 11px;
+}
+
+.retro-menu-item {
+  padding: 4px 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.retro-menu-item:hover {
+  background: #0000aa;
+  color: white;
+}
+
+.retro-menu-separator {
+  height: 1px;
+  background: #808080;
+  margin: 2px 4px;
+  border-top: 1px solid #dfdfdf;
+}
+
+/* Utility classes */
+.pixel-perfect {
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.no-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.retro-shadow {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.retro-inset {
+  border: 2px inset #c0c0c0;
+}
+
+.retro-outset {
+  border: 2px outset #c0c0c0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .retro-window {
+    width: 95% !important;
+    height: 90% !important;
+    top: 5% !important;
+    left: 2.5% !important;
+  }
+
+  .desktop-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .desktop-icon img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .desktop-icon span {
+    font-size: 10px;
+  }
+}
