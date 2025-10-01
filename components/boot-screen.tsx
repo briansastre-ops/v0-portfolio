@@ -1,15 +1,16 @@
+
 "use client"
 
 import { useState, useEffect } from "react"
 
 const bootMessages = [
-  "SYSTEM BOOT v2.1.0",
-  "Loading kernel modules...",
-  "Initializing hardware...",
-  "Starting network services...",
-  "Loading user profile...",
+  "BRIAN SASTRE SYSTEM v1.0",
+  "Initializing portfolio modules...",
+  "Loading developer profile...",
+  "Mounting project directories...",
+  "Establishing skill database...",
   "PORTFOLIO.EXE ready",
-  "Welcome to RetroOS",
+  "Welcome, visitor!",
 ]
 
 export function BootScreen() {
@@ -43,21 +44,30 @@ export function BootScreen() {
   }, [currentMessage])
 
   return (
-    <div className="min-h-screen bg-background text-foreground flex flex-col justify-center items-start p-8 font-mono">
+    <div className="min-h-screen bg-background text-foreground flex items-center justify-center p-8 font-mono">
       <div className="w-full max-w-2xl">
-        <div className="mb-8">
-          <pre className="text-primary text-sm">
+        {/* ASCII Logo centrado */}
+        <div className="mb-8 flex justify-center">
+          <pre className="text-primary text-xs sm:text-sm leading-tight">
             {`
-██████╗ ███████╗████████╗██████╗  ██████╗  ██████╗ ███████╗
-██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔═══██╗██╔═══██╗██╔════╝
-██████╔╝█████╗     ██║   ██████╔╝██║   ██║██║   ██║███████╗
-██╔══██╗██╔══╝     ██║   ██╔══██╗██║   ██║██║   ██║╚════██║
-██║  ██║███████╗   ██║   ██║  ██║╚██████╔╝╚██████╔╝███████║
-╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝  ╚═════╝ ╚══════╝
+██████╗ ██████╗ ██╗ █████╗ ███╗   ██╗
+██╔══██╗██╔══██╗██║██╔══██╗████╗  ██║
+██████╔╝██████╔╝██║███████║██╔██╗ ██║
+██╔══██╗██╔══██╗██║██╔══██║██║╚██╗██║
+██████╔╝██║  ██║██║██║  ██║██║ ╚████║
+╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝
+
+███████╗ █████╗ ███████╗████████╗██████╗ ███████╗
+██╔════╝██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔════╝
+███████╗███████║███████╗   ██║   ██████╔╝█████╗  
+╚════██║██╔══██║╚════██║   ██║   ██╔══██╗██╔══╝  
+███████║██║  ██║███████║   ██║   ██║  ██║███████╗
+╚══════╝╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚══════╝
 `}
           </pre>
         </div>
 
+        {/* Boot messages */}
         <div className="space-y-2">
           {bootMessages.slice(0, currentMessage).map((message, index) => (
             <div key={index} className="text-muted-foreground">
@@ -73,6 +83,7 @@ export function BootScreen() {
           )}
         </div>
 
+        {/* Progress bar */}
         <div className="mt-8">
           <div className="w-full bg-secondary h-2 rounded-none">
             <div

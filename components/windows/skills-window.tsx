@@ -15,35 +15,45 @@ export function SkillsWindow() {
 ╚══════════════════════════════════════════════════╝
 
 [FRONTEND ARSENAL]
-├─ React.js         ██████████ 95% [MASTERED]
-├─ Next.js          █████████░ 90% [EXPERT]
+├─ React.js         █████████░ 90% [ADVANCED]
 ├─ TypeScript       ████████░░ 85% [ADVANCED]
-├─ Tailwind CSS     ██████████ 98% [MASTERED]
-├─ Framer Motion    ███████░░░ 75% [PROFICIENT]
-└─ Three.js         █████░░░░░ 60% [LEARNING]
+├─ JavaScript       █████████░ 90% [ADVANCED]
+├─ Next.js          ████████░░ 80% [PROFICIENT]
+├─ HTML5            ██████████ 95% [MASTERED]
+├─ CSS3             █████████░ 90% [ADVANCED]
+├─ Tailwind CSS     ████████░░ 85% [ADVANCED]
+└─ Vite             ████████░░ 80% [PROFICIENT]
 
 [BACKEND POWERS]
-├─ Node.js          █████████░ 88% [EXPERT]
-├─ Express.js       ████████░░ 82% [ADVANCED]
-├─ Python           ███████░░░ 70% [PROFICIENT]
-├─ PostgreSQL       ████████░░ 80% [ADVANCED]
-├─ MongoDB          ███████░░░ 75% [PROFICIENT]
-└─ Redis            ██████░░░░ 65% [LEARNING]
+├─ Python           ████████░░ 80% [ADVANCED]
+├─ Flask            ███████░░░ 75% [PROFICIENT]
+├─ Node.js          ███████░░░ 70% [PROFICIENT]
+├─ APIs RESTful     ████████░░ 80% [ADVANCED]
+└─ PostgreSQL       ██████░░░░ 65% [LEARNING]
 
-[DEPLOYMENT TOOLS]
-├─ Vercel           ██████████ 95% [MASTERED]
-├─ AWS              ███████░░░ 70% [PROFICIENT]
-├─ Docker           ██████░░░░ 68% [LEARNING]
-├─ GitHub Actions   ████████░░ 80% [ADVANCED]
-└─ Supabase         █████████░ 85% [EXPERT]
+[DEPLOYMENT & TOOLS]
+├─ Git & GitHub     █████████░ 88% [ADVANCED]
+├─ Vercel           ████████░░ 82% [ADVANCED]
+├─ Netlify          ████████░░ 80% [ADVANCED]
+├─ VS Code          ██████████ 95% [MASTERED]
+└─ GitHub Actions   ██████░░░░ 65% [LEARNING]
 
-[SPECIAL ABILITIES]
-├─ UI/UX Design     ████████░░ 82%
-├─ API Development  █████████░ 88%
-├─ Performance Opt. ███████░░░ 75%
-└─ Team Leadership  ██████░░░░ 68%
+[DESIGN & UI/UX]
+├─ Responsive Design ████████░░ 85%
+├─ UI/UX Principles  ████████░░ 80%
+├─ Figma             ███████░░░ 70%
+└─ Animations        ███████░░░ 75%
+
+[SOFT SKILLS]
+├─ Comunicación efectiva    █████████░ 88%
+├─ Trabajo en equipo        ████████░░ 85%
+├─ Adaptabilidad            █████████░ 90%
+├─ Aprendizaje rápido       █████████░ 92%
+├─ Resolución de problemas  ████████░░ 87%
+└─ Gestión del tiempo       ████████░░ 80%
 
 > SKILL_SCAN_COMPLETE
+> SPECIALIZATION: FRONTEND_DEVELOPMENT
 > READY_FOR_DEPLOYMENT ⚡`
 
   useEffect(() => {

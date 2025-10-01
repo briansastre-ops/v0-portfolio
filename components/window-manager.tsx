@@ -7,6 +7,7 @@ import { SkillsWindow } from "./windows/skills-window"
 import { ExperienceWindow } from "./windows/experience-window"
 import { ContactWindow } from "./windows/contact-window"
 import { EducationWindow } from "./windows/education-window"
+import { SnakeGame } from "./windows/snake-game"
 
 interface WindowManagerProps {
   openWindows: string[]
@@ -28,6 +29,8 @@ export function WindowManager({ openWindows, onClose }: WindowManagerProps) {
         return <ExperienceWindow />
       case "contact":
         return <ContactWindow />
+      case "snake":
+        return <SnakeGame />
       default:
         return <div>Window not found</div>
     }
@@ -41,6 +44,7 @@ export function WindowManager({ openWindows, onClose }: WindowManagerProps) {
       skills: "SKILLS.DLL - Technology Stack",
       experience: "HISTORY.LOG - Professional Timeline",
       contact: "CONTACT.EXE - Communication Terminal",
+      snake: "SNAKE.EXE - Classic Retro Game",
     }
     return titles[windowId as keyof typeof titles] || windowId.toUpperCase()
   }

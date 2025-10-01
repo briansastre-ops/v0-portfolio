@@ -14,38 +14,40 @@ export function AboutWindow() {
 ║                CHARACTER PROFILE                 ║
 ╚══════════════════════════════════════════════════╝
 
-NOMBRE: [TU_NOMBRE]
-CLASE: Full Stack Developer
-NIVEL: Senior
-UBICACION: [TU_CIUDAD]
+NOMBRE: Brian Sastre
+CLASE: Técnico Electromecánico & Full Stack Developer
+NIVEL: Junior/Mid-Level
+UBICACION: Concepción del Uruguay, Entre Ríos, Argentina
 ESTADO: Available for new quests
 
 DESCRIPCION:
-Desarrollador apasionado por crear experiencias digitales 
-innovadoras. Especializado en tecnologías web modernas 
-con enfoque en soluciones escalables y user experience.
+Técnico Electromecánico con un fuerte interés en el 
+Front-End y una sólida formación en programación. 
+Proactivo, creativo y orientado a resultados, con 
+habilidades avanzadas en React y TypeScript.
 
-Me encanta transformar ideas complejas en interfaces 
-intuitivas y sistemas robustos. Siempre en búsqueda de 
-nuevos desafíos técnicos y oportunidades de aprendizaje.
+Apasionado por crear experiencias digitales innovadoras
+y transformar ideas complejas en interfaces intuitivas.
+Siempre en búsqueda de nuevos desafíos técnicos y 
+oportunidades de aprendizaje continuo.
 
 ATRIBUTOS PRINCIPALES:
 ├─ Creatividad: ████████░░ 85%
-├─ Problem Solving: ██████████ 95%
-├─ Team Collaboration: █████████░ 90%
-├─ Learning Agility: ████████░░ 88%
-├─ Code Quality: █████████░ 92%
-└─ Communication: ███████░░░ 78%
+├─ Problem Solving: ████████░░ 88%
+├─ Team Collaboration: ████████░░ 82%
+├─ Learning Agility: █████████░ 90%
+├─ Code Quality: ████████░░ 80%
+└─ Communication: ████████░░ 85%
 
 MISION ACTUAL:
-Construir aplicaciones que impacten positivamente 
-en la vida de las personas mientras continúo 
-evolucionando mis habilidades técnicas y liderando 
-equipos hacia la excelencia.
+Desarrollar aplicaciones web modernas que impacten 
+positivamente mientras continúo evolucionando mis 
+habilidades técnicas en el ecosistema JavaScript/React.
 
 FILOSOFIA DE CODIGO:
-"Clean code is not written by following a set of rules.
-Clean code is written by programmers who care."
+"La mejor manera de predecir el futuro es crearlo"
+- Enfoque en código limpio y mantenible
+- Aprendizaje constante y adaptación
 
 > PROFILE_LOADED_SUCCESSFULLY
 > READY_FOR_INTERACTION ⚡`

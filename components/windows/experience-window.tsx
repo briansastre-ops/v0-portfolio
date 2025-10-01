@@ -14,48 +14,57 @@ export function ExperienceWindow() {
 ║               PROFESSIONAL JOURNEY               ║
 ╚══════════════════════════════════════════════════╝
 
-[2023-PRESENT] SENIOR FULL STACK DEVELOPER
-├─ Company: TechCorp Solutions
-├─ Role: Lead Frontend Architecture
-├─ Team Size: 8 developers
-├─ Achievements:
-│  ├─ Reduced load times by 60%
-│  ├─ Implemented CI/CD pipeline
-│  ├─ Mentored 5 junior developers
-│  └─ Led migration to Next.js 14
-└─ Tech: React, Next.js, TypeScript, AWS
+[2025-PRESENTE] ESTUDIANTE & DESARROLLADOR
+├─ Institución: UTN San Rafael
+├─ Role: Full Stack Developer en formación
+├─ Focus: Desarrollo web moderno
+├─ Activities:
+│  ├─ Aprendizaje intensivo de React & TypeScript
+│  ├─ Desarrollo de proyectos personales
+│  ├─ Participación en comunidad de developers
+│  └─ Construcción de portfolio profesional
+└─ Tech: React, Next.js, TypeScript, Python, Flask
 
-[2022-2023] FULL STACK DEVELOPER
-├─ Company: StartupXYZ
-├─ Role: Frontend & Backend Development
-├─ Team Size: 4 developers
+[2024] BOOTCAMP FULL STACK PYTHON
+├─ Programa: Codo a Codo 4.0
+├─ Duration: 4 meses (Abril - Julio)
+├─ Role: Estudiante Full Stack
 ├─ Achievements:
-│  ├─ Built MVP from scratch
-│  ├─ Integrated payment systems
-│  ├─ Scaled to 1000+ users
-│  └─ Implemented real-time features
-└─ Tech: React, Node.js, MongoDB, Stripe
+│  ├─ Desarrollo de aplicaciones web completas
+│  ├─ Dominio de Python & Flask
+│  ├─ Creación de APIs RESTful
+│  ├─ Implementación de bases de datos
+│  └─ Proyectos con frontend y backend integrados
+└─ Tech: Python, Flask, HTML, CSS, JavaScript, SQL
 
-[2021-2022] JUNIOR DEVELOPER
-├─ Company: WebAgency Pro
-├─ Role: Frontend Development
-├─ Team Size: 12 developers
-├─ Achievements:
-│  ├─ Delivered 20+ client projects
-│  ├─ Improved code quality standards
-│  ├─ Created component library
-│  └─ Reduced bug reports by 40%
-└─ Tech: React, Vue.js, SASS, WordPress
+[2014-2022] FORMACIÓN TÉCNICA
+├─ Role: Estudiante Técnico Electromecánico
+├─ Institution: Escuela Técnica N° 2 "Francisco Ramírez"
+├─ Skills Developed:
+│  ├─ Resolución de problemas complejos
+│  ├─ Pensamiento lógico y analítico
+│  ├─ Trabajo en equipo en proyectos técnicos
+│  └─ Fundamentos de electricidad y mecánica
+└─ Base sólida para la programación
 
-[2020-2021] FREELANCE DEVELOPER
-├─ Clients: 15+ small businesses
-├─ Projects: 25+ websites & apps
-├─ Revenue: $50,000+ generated
-└─ Specialization: E-commerce & Landing Pages
+[PROYECTOS FREELANCE]
+├─ Travel App - Aplicación de viajes
+├─ Obsidian SaaS - Web app responsive
+├─ Pizzería CAC - Sistema de gestión
+└─ Múltiples landing pages y componentes
+
+[HABILIDADES PROFESIONALES]
+├─ Desarrollo Frontend avanzado
+├─ Integración de APIs
+├─ Diseño responsive y adaptativo
+├─ Versionado con Git/GitHub
+├─ Deployment en Vercel/Netlify
+└─ Debugging y optimización de código
 
 > CAREER_ANALYSIS_COMPLETE
 > TRAJECTORY: ASCENDING ↗️
-> NEXT_LEVEL: TECH_LEAD_UNLOCKED`
+> STATUS: READY_FOR_PROFESSIONAL_OPPORTUNITIES
+> SEEKING: JUNIOR/MID-LEVEL_FRONTEND_POSITION`
 
   useEffect(() => {
     if (currentIndex < experienceText.length) {

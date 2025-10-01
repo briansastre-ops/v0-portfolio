@@ -14,32 +14,44 @@ export function EducationWindow() {
 ║                EDUCATION SYSTEM                  ║
 ╚══════════════════════════════════════════════════╝
 
-[2020-2024] UNIVERSIDAD/INSTITUTO
-├─ Carrera: Ingeniería en Sistemas / Desarrollo Web
+[2025 - PRESENTE] TECNICATURA EN PROGRAMACIÓN
+├─ Institución: Universidad Tecnológica Nacional (UTN)
+├─ Sede: San Rafael, Mendoza
+├─ Estado: EN CURSO ⚡ (Actualidad)
+├─ Especialización: Full Stack Development
+└─ Enfoque: Desarrollo web moderno y arquitectura
+
+[2024] FULL STACK PYTHON
+├─ Programa: Codo a Codo 4.0
+├─ Institución: Gobierno de la Ciudad de Buenos Aires
+├─ Período: Abril 2024 - Julio 2024
 ├─ Estado: COMPLETADO ✓
-├─ GPA: 8.5/10
-└─ Especialización: Full Stack Development
+├─ Tecnologías:
+│  ├─ Python & Flask
+│  ├─ HTML, CSS, JavaScript
+│  ├─ Bases de datos
+│  └─ Desarrollo de APIs RESTful
+└─ Proyectos: Múltiples aplicaciones web completas
 
-[2023] CERTIFICACIONES TÉCNICAS
-├─ React Advanced Patterns
-├─ Node.js & Express Mastery  
-├─ Database Design & Optimization
-└─ Cloud Architecture (AWS/Vercel)
-
-[2022] BOOTCAMP INTENSIVO
-├─ Programa: Full Stack JavaScript
-├─ Duración: 6 meses
-├─ Proyectos: 12 aplicaciones completas
-└─ Ranking: Top 5% de la clase
+[2014-2022] TÉCNICO ELECTROMECÁNICO
+├─ Institución: Escuela Técnica N° 2 "Francisco Ramírez"
+├─ Ubicación: Concepción del Uruguay, Entre Ríos
+├─ Período: Marzo 2014 - Diciembre 2022
+├─ Estado: COMPLETADO ✓
+├─ Especialización: Electromecánica
+└─ Base sólida en: Lógica, matemáticas y resolución
+   de problemas técnicos complejos
 
 [ONGOING] APRENDIZAJE CONTINUO
-├─ Next.js 15 & React 19
-├─ TypeScript Advanced
-├─ AI/ML Integration
-└─ Web3 & Blockchain
+├─ React & Next.js (Advanced)
+├─ TypeScript
+├─ Arquitectura Frontend moderna
+├─ UI/UX Design con Tailwind CSS
+└─ Desarrollo de aplicaciones responsive
 
 > EDUCATION_SCAN_COMPLETE
-> ALL_CREDENTIALS_VERIFIED ✓`
+> ALL_CREDENTIALS_VERIFIED ✓
+> CONTINUOUS_LEARNING_MODE: ACTIVE`
 
   useEffect(() => {
     if (currentIndex < educationText.length) {

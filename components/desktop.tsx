@@ -1,9 +1,11 @@
+
 "use client"
 
 import { useState } from "react"
 import { Taskbar } from "./taskbar"
 import { WindowManager } from "./window-manager"
 import { DesktopIcon } from "./desktop-icon"
+import { DesktopWallpaper } from "./desktop-wallpaper"
 
 const desktopIcons = [
   { id: "about", name: "ABOUT.EXE", icon: "👤", x: 50, y: 50 },
@@ -12,6 +14,7 @@ const desktopIcons = [
   { id: "projects", name: "PROJECTS.DIR", icon: "📁", x: 50, y: 350 },
   { id: "experience", name: "HISTORY.LOG", icon: "📜", x: 50, y: 450 },
   { id: "contact", name: "CONTACT.EXE", icon: "📧", x: 50, y: 550 },
+  { id: "snake", name: "SNAKE.EXE", icon: "🐍", x: 50, y: 650 }, // NUEVO
 ]
 
 export function Desktop() {
@@ -29,6 +32,9 @@ export function Desktop() {
 
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
+      {/* Desktop Wallpaper */}
+      <DesktopWallpaper />
+
       {/* Desktop Icons */}
       {desktopIcons.map((icon) => (
         <DesktopIcon key={icon.id} {...icon} onDoubleClick={() => openWindow(icon.id)} />

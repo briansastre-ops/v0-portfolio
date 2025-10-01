@@ -14,42 +14,52 @@ export function ProjectsWindow() {
 ║                 QUEST COMPLETED                  ║
 ╚══════════════════════════════════════════════════╝
 
-[PROJECT_001] E-COMMERCE PLATFORM
-├─ Tech Stack: Next.js, Stripe, Supabase
-├─ Features: Payment processing, Admin panel
+[PROJECT_001] TRAVEL APP
+├─ Tech Stack: HTML, CSS, JavaScript
+├─ Features: Planificación de viajes, diseño responsive
 ├─ Status: DEPLOYED ✓
-├─ Users: 500+ active
-└─ GitHub: github.com/usuario/ecommerce-app
+├─ Highlights: Enmaquetado de App de Campamentos
+├─ URL: https://travelapp-bms.netlify.app/
+└─ GitHub: github.com/briansastre-ops
 
-[PROJECT_002] TASK MANAGEMENT APP
-├─ Tech Stack: React, Node.js, MongoDB
-├─ Features: Real-time collaboration, Analytics
+[PROJECT_002] OBSIDIAN SaaS - FULL RESPONSIVE WEB APP
+├─ Tech Stack: React, CSS, Vite
+├─ Features: Aplicación completamente responsive
 ├─ Status: DEPLOYED ✓
-├─ Teams: 50+ organizations
-└─ GitHub: github.com/usuario/task-manager
+├─ Highlights: Diseño adaptativo para todos los dispositivos
+├─ URL: https://obsidian-saas.netlify.app/
+└─ Experiencia fluida en mobile, tablet y desktop
 
-[PROJECT_003] AI CHAT ASSISTANT
-├─ Tech Stack: Next.js, OpenAI API, Vercel AI
-├─ Features: Context awareness, File uploads
-├─ Status: BETA TESTING
-├─ Conversations: 10,000+
-└─ GitHub: github.com/usuario/ai-assistant
+[PROJECT_003] FOOD APP - PIZZERÍA CAC
+├─ Tech Stack: HTML, CSS, JavaScript
+├─ Features: Sistema de gestión de inventario
+├─ Status: DEPLOYED ✓
+├─ Highlights: Gestión de productos e informes
+├─ URL: https://pizzeriacac.netlify.app/
+└─ Admin panel y seguimiento eficiente
 
-[PROJECT_004] PORTFOLIO RETRO OS
-├─ Tech Stack: Next.js, Tailwind, Framer Motion
-├─ Features: Interactive desktop, Animations
-├─ Status: CURRENT PROJECT
+[PROJECT_004] PORTFOLIO RETRO OS (ACTUAL)
+├─ Tech Stack: Next.js, TypeScript, Tailwind CSS
+├─ Features: Desktop interactivo, Animaciones
+├─ Status: IN DEVELOPMENT 🚧
 ├─ Theme: Retro computing nostalgia
-└─ GitHub: github.com/usuario/retro-portfolio
+└─ Experiencia única de usuario tipo OS vintage
 
-[SIDE_QUESTS]
-├─ Open Source Contributions: 25+
-├─ Technical Blog Posts: 15
-├─ Community Workshops: 8
-└─ Mentoring Sessions: 50+ hours
+[LEARNING PROJECTS]
+├─ Múltiples landing pages responsive
+├─ Componentes reutilizables en React
+├─ Integraciones con APIs
+└─ Aplicaciones CRUD con Python/Flask
+
+[SOCIAL & PORTFOLIO]
+├─ GitHub: github.com/briansastre-ops
+├─ LinkedIn: linkedin.com/in/brian-sastre-a137452
+├─ Portfolio Original: briansastre-portfolio.vercel.app
+└─ Email: briansastre159@gmail.com
 
 > ALL_PROJECTS_LOADED
-> PORTFOLIO_READY_FOR_REVIEW 🚀`
+> PORTFOLIO_READY_FOR_REVIEW 🚀
+> OPEN_TO_NEW_OPPORTUNITIES`
 
   useEffect(() => {
     if (currentIndex < projectsText.length) {

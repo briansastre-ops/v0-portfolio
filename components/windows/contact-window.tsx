@@ -16,26 +16,39 @@ export function ContactWindow() {
 ╚══════════════════════════════════════════════════╝
 
 [DIRECT_CHANNELS]
-├─ EMAIL: tu.email@ejemplo.com
-├─ LINKEDIN: linkedin.com/in/tu-perfil
-├─ GITHUB: github.com/tu-usuario
-├─ TWITTER: @tu_handle
-└─ PORTFOLIO: tu-sitio-web.com
+├─ EMAIL: briansastre159@gmail.com
+├─ LINKEDIN: linkedin.com/in/brian-sastre-a137452
+├─ GITHUB: github.com/briansastre-ops
+├─ PORTFOLIO: briansastre-portfolio.vercel.app
+└─ LOCATION: Concepción del Uruguay, Entre Ríos, AR
 
 [STATUS] ONLINE ● Ready for collaboration
 [RESPONSE_TIME] < 24 hours
-[TIMEZONE] GMT-5 (America/Bogota)
-[LANGUAGES] Spanish (Native), English (Fluent)
+[TIMEZONE] GMT-3 (Argentina)
+[LANGUAGES] Spanish (Native), English (Intermediate)
 
 [COLLABORATION_INTERESTS]
-├─ Full Stack Development Projects
+├─ Frontend Development Projects (React/Next.js)
+├─ Full Stack Opportunities
 ├─ Open Source Contributions  
-├─ Technical Mentoring
-├─ Startup Consulting
-└─ Speaking Opportunities
+├─ Junior/Mid-Level Positions
+├─ Remote Work
+└─ Learning & Growth Opportunities
+
+[CURRENT_PROJECTS]
+├─ Travel App: travelapp-bms.netlify.app
+├─ Obsidian SaaS: obsidian-saas.netlify.app
+├─ Pizzería CAC: pizzeriacac.netlify.app
+└─ Portfolio V0: [IN DEVELOPMENT]
+
+[PREFERRED_CONTACT]
+Best way to reach me: briansastre159@gmail.com
+LinkedIn for professional networking
+GitHub for code review and collaboration
 
 > CONNECTION_ESTABLISHED
 > READY_TO_RECEIVE_MESSAGES
+> OPEN_TO_OPPORTUNITIES ⚡
 
 [PRESS ENTER TO OPEN MESSAGE_COMPOSER]`
 
@@ -61,13 +74,17 @@ export function ContactWindow() {
       {showForm && (
         <div className="mt-4 border border-green-400 p-4">
           <div className="text-yellow-400 mb-2">[MESSAGE_COMPOSER_ACTIVE]</div>
-          <form className="space-y-3">
+          <form className="space-y-3" onSubmit={(e) => {
+            e.preventDefault();
+            window.location.href = 'mailto:briansastre159@gmail.com';
+          }}>
             <div>
               <label className="block text-green-400 mb-1">FROM:</label>
               <input
                 type="email"
                 className="w-full bg-black border border-green-400 text-green-400 p-2 font-mono text-sm"
                 placeholder="your.email@domain.com"
+                required
               />
             </div>
             <div>
@@ -76,6 +93,7 @@ export function ContactWindow() {
                 type="text"
                 className="w-full bg-black border border-green-400 text-green-400 p-2 font-mono text-sm"
                 placeholder="Project collaboration opportunity"
+                required
               />
             </div>
             <div>
@@ -83,7 +101,8 @@ export function ContactWindow() {
               <textarea
                 rows={4}
                 className="w-full bg-black border border-green-400 text-green-400 p-2 font-mono text-sm resize-none"
-                placeholder="Hello! I'd like to discuss..."
+                placeholder="Hello Brian! I'd like to discuss..."
+                required
               />
             </div>
             <button
